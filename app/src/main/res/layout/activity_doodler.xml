@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="amelia.ameliadoodler.Doodler">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <amelia.ameliadoodler.DoodleView
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:id="@+id/doodler"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_columnSpan="4" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Red"
+                android:id="@+id/textR"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <SeekBar
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekR"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Green"
+                android:id="@+id/textG"
+                android:layout_row="0"
+                android:layout_column="2" />
+
+            <SeekBar
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekG"
+                android:layout_row="0"
+                android:layout_column="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Blue"
+                android:id="@+id/textB"
+                android:layout_row="0"
+                android:layout_column="4" />
+
+            <SeekBar
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekB"
+                android:layout_row="0"
+                android:layout_column="5" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:background="#0000FF"
+                android:id="@+id/colorSwatch"
+                android:layout_row="0"
+                android:layout_column="6" />
+        </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Thick"
+            android:id="@+id/textView"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <SeekBar
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:text="Brush Size"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:indeterminate="false"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Opac."
+            android:id="@+id/textView2"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <SeekBar
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekA"
+            android:text="Brush Size"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="-20dp"
+            android:indeterminate="false"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:id="@+id/clear"
+            android:onClick="onButtonClick"
+            android:layout_row="0"
+            android:layout_column="4" />
+
+        <ToggleButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="!"
+            android:id="@+id/toggleButton"
+            android:onClick="onButtonClick"
+            android:layout_row="0"
+            android:layout_column="5" />
+
+        </GridLayout>
+    </GridLayout>
+</RelativeLayout>
